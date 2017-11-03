@@ -1,7 +1,7 @@
 ﻿# Личный проект «Девайс»
 
 * Студент: [Андрей Сморгонский](https://up.htmlacademy.ru/htmlcss/19/user/501355).
-* Наставник: Vladislav Rostov.
+* Наставник: [Vladislav Rostov](https://htmlacademy.ru/profile/id425565).
 
 ---
 
