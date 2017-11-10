@@ -31,53 +31,57 @@
       <h2>Моноподы для селфи</h2>
       <nav  class="catalog-navigation">
       <ul>
-        <li><a href="index.html">Главная</a>
-          <ul>
-            <li><a href="catalog.html">Каталог товаров</a>
-              <ul>
-                <li><a href="monopods.html">Моноподы для селфи</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+        <li><a href="index.html">Главная</a></li>
+        <li class="breadcrubms-separate"> > </li>
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li class="breadcrubms-separate"> > </li>
+        <li><a href="monopods.html">Моноподы для селфи</a></li>
       </ul>
     </nav>
     </header>
     <section class="sorting">
-      <div>
-      <p>Сортировка:</p>
       <ul>
+        <li>Сортировка:</li>
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По популярности</a></li>
       </ul>
       <ul>
-        <li><a href="#"><img src="sort-up.svg" alt="По возрастанию"></a></li>
-        <li><a href="#"><img src="sort-down.svg" alt="По убыванию"></a></li>
+        <li><a href="#"><img src="sort-up.svg" alt="По возрастанию">
+        </a></li>
+        <li><a href="#"><img src="sort-down.svg" alt="По убыванию">
+        </a></li>
       </ul>
     </div>
   </section>
   <section class="items">
     <div class="items-list">
-      <a class="item-preview" href="#"><img src="#" alt="Любительская селфи-палка"></a>
-      <p><a class="item-name" href="#">Любительская селфи-палка</a>
-      <span class="item-price">500 руб.</span></p>
+      <a class="item-preview" href="#">
+        <img src="#">
+        Любительская селфи-палка
+        <span class="item-price">500 руб.</span>
+      </a>
     </div>
     <div class="items-list">
-      <a class="item-preview" href="#"><img src="#" alt="Профессиональная селфи-палка"></a>
-      <p><a class="item-name" href="#">Профессиональная селфи-палка</a>
-      <span class="item-price">1500 руб.</span></p>
+      <a class="item-preview" href="#">
+        <img src="#">
+        Профессиональная селфи-палка
+        <span class="item-price">1500 руб.</span>
+      </a>
     </div>
     <div class="items-list">
-      <a class="item-preview" href="#"><img src="#" alt="Непотопляемая селфи-палка"></a>
-      <p><a class="item-name" href="#">Непотопляемая селфи-палка</a>
-      <span class="item-price">2500 руб.</span></p>
+      <a class="item-preview" href="#">
+        <img src="#">
+        Непотопляемая селфи-палка
+        <span class="item-price">2500 руб.</span>
+      </a>
     </div>
     <div class="items-list">
-      <a class="item-preview" href="#"><img src="#" alt="Селфи-палка «Следуй за мной»"></a>
-      <p><a class="item-name" href="#">Селфи-палка «Следуй за мной»</a>
-      <span class="item-price">4900 руб.</span></p>
+      <a class="item-preview" href="#">
+        <img src="#">
+        Селфи-палка «Следуй за мной»
+        <span class="item-price">4900 руб.</span>
+      </a>
     </div>
     </section>
     <section class="items-navigation">
@@ -91,27 +95,38 @@
     </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer-logo">
-        <img src="img/logo-footer.svg">
-      </a>
-      <nav class="main-navigation-footer">
-        <ul class="user-navigation-footer">
-          <li class="login-link">Войти</li>
-          <li class="compare">Сравнить</li>
-          <li class="cart">Корзина</li>
-        </ul>
-        <ul class="site-navigation-footer">
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <p>г. Москва, ул. Строителей, 15</p>
-        <p>Тел.: +7(495)495-95-95 </p>
-        <ul>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</li>
-          <li><a class="social-button" href="#">Твиттер</li>
-        </ul>
+      <table>
+        <tr>
+          <td class="main-footer-logo">
+            <img src="img/logo-footer.svg">
+          </td>
+            <td>г. Москва, ул. Строителей, 15
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+              <a href="delivery.html">Доставка</a>
+              <a href="guarantee.html">Гарантия</a>
+              <a href="contacts.html">Контакты</a>
+          </td>
+          <td><a class="social-button" href="#">Фейсбук</a>
+              <a class="social-button" href="#">Инстаграм</a>
+              <a class="social-button" href="#">Твиттер</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ul class="user-navigation-footer">
+              <li class="login-link">Войти</li>
+              <li class="compare">Сравнить</li>
+              <li class="cart">Корзина</li>
+            </ul>
+          </td>
+          <td class="telephone-footer">Тел.: +7(495)495-95-95</td>
+          <td class="logo-footer"><img src="img/logo-header.svg"></td>
+        </tr>
+      </table>
     </footer>
   </body>
 </html>
