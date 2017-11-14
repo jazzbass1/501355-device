@@ -6,9 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-logo">
-        <img src="img/logo-header.svg">
-      </a>
+      <h1><a href="index.html">Device</a></h1>
       <nav class="user-navigation-header">
         <ul>
           <li class="search">Поиск по сайту</li>
@@ -20,6 +18,14 @@
         <nav class="site-navigation-header">
         <ul>
           <li><a href="catalog.html">Каталог товаров</a></li>
+            <ul>
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="guarantee.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
@@ -35,10 +41,49 @@
         <li class="breadcrubms-separate"> > </li>
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li class="breadcrubms-separate"> > </li>
-        <li><a href="monopods.html">Моноподы для селфи</a></li>
+        <li>Моноподы для селфи</li>
       </ul>
     </nav>
-    </header>
+  </header>
+    <section class="filter">
+      <p>Фильтр:</p>
+      <form method="get">
+      <p>Стоимость</p>
+      <input type="range" min="0" max="10000" step="1">
+      <p>Цвет</p>
+      <label>
+        <input type="checkbox" name="black">
+        Черный
+      </label>
+      <label>
+        <input type="checkbox" name="white">
+        Белый
+      </label>
+      <label>
+        <input type="checkbox" name="blue">
+        Синий
+      </label>
+      <label>
+        <input type="checkbox" name="red">
+        Красный
+      </label>
+      <label>
+        <input type="checkbox" name="pink">
+        Розовый
+      </label>
+      <p>Bluetooth</p>
+      <label>
+        <input type="radio" name="bluetooth" value="yes">
+        Есть
+      </label>
+      <label>
+        <input type="radio" name="bluetooth" value="no">
+        Нет
+      </label>
+      <br>
+      <input type="submit" value="Показать">
+      </form>
+    </section>
     <section class="sorting">
       <ul>
         <li>Сортировка:</li>
@@ -56,32 +101,64 @@
   </section>
   <section class="items">
     <div class="items-list">
-      <a class="item-preview" href="#">
-        <img src="#">
-        Любительская селфи-палка
+      <img src="img/item-1.jpg">
+      <p>
+        <a href="#">
+          Любительская селфи-палка
+        </a>
         <span class="item-price">500 руб.</span>
-      </a>
+      </p>
+      <p>
+      <a class="button" href="#">В корзину</a>
+      </p>
+      <p>
+      <a class="compare-item" href="#">Добавить к сравнению</a>
+      </p>
     </div>
     <div class="items-list">
-      <a class="item-preview" href="#">
-        <img src="#">
+      <img src="img/item-2.jpg">
+      <p>
+        <a class="item-preview" href="#">
         Профессиональная селфи-палка
+        </a>
         <span class="item-price">1500 руб.</span>
-      </a>
+      </p>
+      <p>
+      <a class="button" href="#">В корзину</a>
+      </p>
+      <p>
+      <a class="compare-item" href="#">Добавить к сравнению</a>
+      </p>
     </div>
     <div class="items-list">
+      <img src="img/item-3.jpg">
+      <p>
       <a class="item-preview" href="#">
-        <img src="#">
         Непотопляемая селфи-палка
-        <span class="item-price">2500 руб.</span>
       </a>
+        <span class="item-price">2500 руб.</span>
+      </p>
+      <p>
+      <a class="button" href="#">В корзину</a>
+      </p>
+      <p>
+      <a class="compare-item" href="#">Добавить к сравнению</a>
+      </p>
     </div>
     <div class="items-list">
-      <a class="item-preview" href="#">
-        <img src="#">
-        Селфи-палка «Следуй за мной»
-        <span class="item-price">4900 руб.</span>
-      </a>
+      <img src="img/item-4.jpg">
+      <p>
+        <a class="item-preview" href="#">
+          Селфи-палка «Следуй за мной»
+        </a>
+          <span class="item-price">4900 руб.</span>
+      </p>
+      <p>
+      <a class="button" href="#">В корзину</a>
+      </p>
+      <p>
+      <a class="compare-item" href="#">Добавить к сравнению</a>
+      </p>
     </div>
     </section>
     <section class="items-navigation">
@@ -97,7 +174,7 @@
     <footer class="main-footer">
       <div>
         <div class="main-footer-logo">
-          <img src="img/footer-logo.svg">
+          <h2>Device</h2>
         </div>
         <div class="footer-address">г. Москва, ул. Строителей, 15
         </div>
