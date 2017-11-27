@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold.woff") format("woff");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+  src: url("../fonts/Gilroyextrabold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff") format("woff");
+  src: url("../fonts/gilroylight.woff2") format("woff2");
+  src: url("../fonts/Gilroylight.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: rgb(70, 70, 70);
+  letter-spacing: 0.01em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+li {
+  list-style: none;
+}
+
+.main-header {
+  background: rgb(247, 226, 150);
+}
+
+.main-header-logo img:hover {
+  filter: alpha(Opacity=60);
+  opacity: 0.6;
+}
+
+.main-header-logo img:active {
+  filter: alpha(Opacity=30.2);
+  opacity: 0.302;
+}
+
+.site-navigation-header,
+.slides-details,
+.about-us-details {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.catalog-menu {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+.slide-feature,
+h2,
+h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  line-height: 1.2;
+  color: rgb(0, 0, 0);
+}
+
+td:first-of-type {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: rgb(70, 70, 70);
+  line-height: 20px;
+}
+
+td:nth-of-type(2n) {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+}
+
+.user-navigation-header a:hover,
+.site-navigation-header a:hover {
+  filter: alpha(Opacity=60);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation-header a:active,
+.site-navigation-header a:active {
+  filter: alpha(Opacity=30.2);
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.main-header input::-webkit-input-placeholder {color: rgba(0, 0, 0, 0.302);}
+.main-header input::-moz-placeholder          {color: rgba(0, 0, 0, 0.302);}
+.main-header input:-moz-placeholder           {color: rgba(0, 0, 0, 0.302);}
+.main-header input:-ms-input-placeholder      {color: rgba(0, 0, 0, 0.302);}
+
+.main-header input:hover::-webkit-input-placeholder {color: rgba(0, 0, 0, 0.6);}
+.main-header input:hover::-moz-placeholder          {color: rgba(0, 0, 0, 0.302);}
+.main-header input:hover:-moz-placeholder           {color: rgba(0, 0, 0, 0.302);}
+.main-header input:hover:-ms-input-placeholder      {color: rgba(0, 0, 0, 0.302);}
+
+.main-header input:focus::-webkit-input-placeholder {color: rgb(0, 0, 0);}
+.main-header input:focus::-moz-placeholder          {color: rgb(0, 0, 0);}
+.main-header input:focus:-moz-placeholder           {color: rgb(0, 0, 0);}
+.main-header input:focus:-ms-input-placeholder      {color: rgb(0, 0, 0);}
+
+.slides-details,
+.about-us-details {
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.slides-details:hover,
+.about-us-details:hover {
+  background: rgb(240, 197, 46);
+}
+
+.slides-details:active,
+.delivery-list a:active {
+}
+
+.features {
+  background: rgb(229, 229, 229);
+}
+
+.companies-logos img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  filter: alpha(Opacity=20);
+  opacity: 0.2;
+}
+
+.companies-logos img:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none;
+  filter: alpha(Opacity=100);
+  opacity: 1;
+}
+
+.delivery-list {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  color: rgb(0,0,0);
+}
+
+.write-us label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0em;
+  line-height: 18px;
+}
+
+.write-us input {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}

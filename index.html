@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -27,7 +29,7 @@
         <nav class="site-navigation-header">
         <ul>
           <li><a href="catalog.html">Каталог товаров</a>
-            <ul>
+            <ul class="catalog-menu">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
@@ -49,13 +51,15 @@
               <img src="img/slider-1.png" width="384" height="486"
               alt="Самая длинная палка для селфи">
             </a>
-            <p>Делай селфи, как Бен Стиллер!</p>
+            <p class="slide-feature">Делай селфи, как Бен Стиллер!</p>
             <p>
               Самая длинная палка для селфи доступна в нашем магазине.
               <br>
               Восемь (Восемь, Карл!) метров длиной и весом  всего 5 килограмм.
             </p>
-            <a href="selfie-stick-ben-stiller.html">Подробнее</a>
+            <div class="slides-details">
+              <a href="selfie-stick-ben-stiller.html">Подробнее</a>
+            </div>
             <table class="slides-specs">
               <tr>
                 <td class="parameter">Длина палки</td>
@@ -73,10 +77,12 @@
             <a href="fitness-bracelets.html">
               <img src="img/slider-2.png" width="345" height="485"
               alt="Мотивирующие фитнес-браслеты"></a>
-            <p>Худеем правильно!</p>
+            <p class="slide-feature">Худеем правильно!</p>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
                не пропускать занятия и соблюдать диету.</p>
-              <a href="selfie-stick-ben-stiller.html">Подробнее</a>
+              <div class="slides-details">
+                <a href="selfie-stick-ben-stiller.html">Подробнее</a>
+              </div>
               <table class="slides-specs">
                 <tr>
                   <td class="parameter">Без подзарядки</td>
@@ -86,12 +92,14 @@
               <a href="quadrocopters.html">
                 <img src="img/slider-3.png" width="526" height="334"
                 alt="Квадрокоптер"></a>
-              <p>Порхает как бабочка, жалит как пчела!
+              <p class="slide-feature">Порхает как бабочка, жалит как пчела!
               </p>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
-                <a href="quadrocopters.html">Подробнее</a>
+                <div class="slides-details">
+                  <a href="quadrocopters.html">Подробнее</a>
+                </div>
                 <table class="slides-specs">
                   <tr>
                     <td class="parameter">Дальность полета</td>
@@ -108,7 +116,7 @@
         <ul class="categories">
           <li class="categories-item">
             <a href="virtual-reality.html">
-              <img src="img/popular-1.svg" width="97" height="35" alt="Виртуальная реальность">
+              <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
               <span>Виртуальная реальность</span>
             </a>
           </li>
@@ -172,6 +180,22 @@
             </li>
           </ul>
       </section>
+      <section class="companies-logos">
+        <ul class="companies-logos">
+          <li>
+            <img src="img/logo-1.png" width="260" height="100" alt="Компания DJI">
+          </li>
+          <li>
+            <img src="img/logo-2.png" width="260" height="100" alt="Компания SP Gadgets">
+          </li>
+          <li>
+            <img src="img/logo-3.png" width="260" height="100" alt="Компания GoPro">
+          </li>
+          <li>
+            <img src="img/logo-4.png" width="260" height="100" alt="Компания Vive">
+          </li>
+        </ul>
+      </section>
       <section class="about-us">
         <h2>О нас</h2>
         <p>
@@ -186,7 +210,9 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="details-about-us">Подробнее о нас</a>
+        <div class="about-us-details">
+          <a href="#">Подробнее о нас</a>
+        </div>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
