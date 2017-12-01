@@ -501,3 +501,268 @@ ul.delivery-companies {
   filter: alpha(Opacity=30.2);
   opacity: 0.302;
 }
+
+.catalog h2 {
+  font-family: "Gilroy";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 47px;
+  letter-spacing: 0.01;
+}
+.catalog-navigation a {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgba(0, 0, 0, 0.302);
+  letter-spacing: 0.01em;
+  line-height: 36px;
+}
+.breadcrubms-separator {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.01em;
+  line-height: 36px;
+}
+
+.filter {
+  background: rgb(238, 238, 238);
+}
+.filter p {
+  font-family: "Gilroy";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    display:none;
+}
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+}
+
+
+.filter-itself {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgb(0, 0, 0);
+  line-height: 40px;
+  letter-spacing: 0.01em;
+}
+.filter-itself fieldset{
+  border: none;
+}
+.filter-itself legend {
+  font-size: 18px;
+  font-family: "Gilroy";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+input[type="checkbox"]:hover + label::before {
+  opacity: 0.7;
+}
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  display: inline-block;
+  height: 23px;
+  width: 28px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+input[type="checkbox"]:active + label::before {
+  opacity: 1;
+}
+
+input[type="checkbox"]:disabled + label {
+  cursor: default;
+  color: rgba(0, 0, 0, 0.302);
+}
+input[type="checkbox"]:disabled + label::before {
+  opacity: 0.302;
+}
+input[type="checkbox"]:disabled:active + label::before {
+  opacity: 0.302;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+input[type="radio"]:hover + label::before {
+  opacity: 0.7;
+}
+input[type="radio"]:checked + label::before {
+  content: "";
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+input[type="radio"]:active + label::before {
+  opacity: 1;
+}
+
+input[type="radio"]:disabled + label {
+  cursor: default;
+  color: rgba(0, 0, 0, 0.302);
+}
+input[type="radio"]:disabled + label::before {
+  opacity: 0.302;
+}
+input[type="radio"]:disabled:active + label::before {
+  opacity: 0.302;
+}
+
+.filter-btn {
+  border: none;
+  background: none;
+  width: 200px;
+  position: relative;
+}
+.filter-btn::before {
+  width: 200px;
+}
+
+.sorting {
+  background: rgb(235, 235, 235);
+}
+.sorting-title {
+  font-family: "Gilroy";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 16px;
+  background: rgb(219, 219, 219);
+}
+
+.sorting a {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgba(0, 0, 0, 0.302);
+
+}
+.sorting a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.sorting a:active {
+  color: rgb(0, 0, 0);
+}
+
+.sorting-direction img{
+  opacity: 0.302;
+}
+.sorting-direction img:hover{
+  opacity: 0.6;
+}
+.sorting-direction img:active{
+  opacity: 1;
+}
+
+.sorting .sorting-current {
+  opacity: 1;
+  color: rgb(0, 0, 0);
+}
+
+.item-name {
+  font-size: 18px;
+  font-family: "Gilroy";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+.item-price {
+  font-size: 16px;
+  font-family: "Gilroy";
+  color: rgb(70, 70, 70);
+  letter-spacing: 0.01em;
+}
+.item-btn {
+  width: 200px;
+  line-height: 40px;
+}
+.item-btn::before {
+  width: 200px;
+}
+.item-compare {
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: rgba(0, 0, 0, 0.502);
+  line-height: 36px;
+  letter-spacing: 0.01em;
+}
+.item-compare:hover {
+  color: rgb(0, 0, 0);
+}
+.item-compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.items-navigation .back,
+.items-navigation .forward {
+  font-family: "Gilroy";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+}
+.items-navigation .pages {
+  font-family: "Gilroy";
+  color: rgba(0, 0, 0, 0.302);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.items-navigation .current-page {
+  color: rgb(0, 0, 0);
+}
+
+.items-navigation .back,
+.items-navigation .forward {
+  display: block;
+  position: relative;
+  width: 126px;
+  height: 70px;
+  background: rgb(235, 235, 235);
+  text-align: center;
+  line-height: 70px;
+}
+.items-navigation .back:hover,
+.items-navigation .forward:hover {
+  background: rgb(217, 217, 217);
+}
+.items-navigation .back:active,
+.items-navigation .forward:active {
+  color: rgba(0, 0, 0, 0.302);
+  opacity: 0.9;
+}
+
+.items-navigation .pages:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+.items-navigation .pages:active {
+  color: rgb(0, 0, 0);
+}
