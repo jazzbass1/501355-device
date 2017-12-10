@@ -107,20 +107,20 @@ li {
   margin-left: 98px;
   position: relative;
 }
-#search {
+.search-field {
   background: none;
   border: none;
   font-size: 15px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.302);
   line-height: 36px;
   letter-spacing: 0.01em;
   position: relative;
 }
-#search:hover {
+.search-field:hover {
   color: rgba(0, 0, 0, 0.6);
 }
-#search:focus {
+.search-field:focus {
   color: rgb(0, 0, 0);
 }
 
@@ -146,7 +146,7 @@ label[for="search"]::before {
   letter-spacing: 0.01em;
   line-height: 36px;
   font-size: 15px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgb(0, 0, 0);
   position: absolute;
   top: -6px;
@@ -163,17 +163,22 @@ label[for="search"]::before {
   top: 49px;
 }
 
-#search:focus + .search-submit {
+.search-field:focus + .search-submit {
   display: block;
+  cursor: pointer;
 }
-#search:focus + .search-submit:hover {
+.search-field:focus + .search-submit:hover {
   background: #000000;
   color: rgb(255, 255, 255);
   display: block;
 }
-#search:focus + .search-submit:active {
+
+.search-field:focus + .search-submit:active {
   color: rgba(255, 255, 255, 0.302);
   display: block;
+}
+.search-field:focus {
+  outline: none;
 }
 
 .user-navigation-itself{
@@ -216,7 +221,6 @@ label[for="search"]::before {
   text-align: right;
 }
 
-
 .user-navigation-header a{
   font-size: 15px;
   font-family: "OpenSans", Arial, sans-serif;
@@ -238,16 +242,15 @@ label[for="search"]::before {
   position: relative;
 }
 .user-navigation-login a.login-link::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 4px;
-    left: -26px;
-    height: 13px;
-    width: 13px;
-    background-image: url("../img/user.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  display: inline-block;    position: absolute;
+  top: 4px;
+  left: -26px;
+  height: 13px;
+  width: 13px;
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 a.compare {
   position: relative;
@@ -304,7 +307,18 @@ a.cart {
   display: inline-block;
   margin-top: 22px;
   margin-left: 59px;
+  position: relative;
 }
+.catalog-header::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../img/plus.png");
+  position: absolute;
+  right: -28px;
+  top: 2px;
+}
+
 .features-header li{
   display: inline-block;
   flex-basis: 165px;
@@ -338,7 +352,7 @@ a.cart {
 }
 .catalog-submenu-header a {
   font-size: 15px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgb(0, 0, 0);
   line-height: 36px;
   letter-spacing: 0.01em;
@@ -347,7 +361,6 @@ a.cart {
 .catalog-header:hover + .catalog-submenu-header,
 .catalog-submenu-header:hover {
   display: flex;
-
 }
 
 .catalog-submenu-header .column {
@@ -366,7 +379,7 @@ a.cart {
 .features-header a,
 .catalog-header  {
   font-size: 18px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
@@ -394,14 +407,14 @@ a.cart {
 }
 .top-products-slogan {
   font-size: 47px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   letter-spacing: 0.01em;
 }
 .top-products-description {
  font-size: 15px;
- font-family: "OpenSans";
+ font-family: "OpenSans", Arial, sans-serif;
  color: rgb(70, 70, 70);
  line-height: 30px;
  letter-spacing: 0.01em;
@@ -457,18 +470,17 @@ a.cart {
 	width: 12px;
 }
 
-#slide-1:checked ~ .slider-controls label:nth-of-type(1),
-#slide-2:checked ~ .slider-controls label:nth-of-type(2),
-#slide-3:checked ~ .slider-controls label:nth-of-type(3) {
+input.slide-1:checked ~ .slider-controls label:nth-of-type(1),
+input.slide-2:checked ~ .slider-controls label:nth-of-type(2),
+input.slide-3:checked ~ .slider-controls label:nth-of-type(3) {
   background-image: url("../img/slider-button-on.png");
 }
-#slide-1:checked ~ .slider > .slide-1,
-#slide-2:checked ~ .slider > .slide-2,
-#slide-3:checked ~ .slider > .slide-3 {
+input.slide-1:checked ~ .slider > .slide-1,
+input.slide-2:checked ~ .slider > .slide-2,
+input.slide-3:checked ~ .slider > .slide-3 {
 	opacity: 1;
 	z-index: 1;
 }
-
 
 .slides {
   display: flex;
@@ -485,7 +497,7 @@ a.cart {
 .slide-1 .column-2::before{
   content:"01";
   font-size: 179.2px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -498,7 +510,7 @@ a.cart {
 .slide-2 .column-2::before{
   content:"02";
   font-size: 179.2px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -511,7 +523,7 @@ a.cart {
 .slide-3 .column-2::before{
   content:"03";
   font-size: 179.2px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -579,7 +591,7 @@ a.cart {
   display: block;
   height: 40px;
   font-size: 18px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
@@ -617,14 +629,14 @@ a.cart {
 
 .top-products-specs .parameter {
   font-size: 13px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgb(70, 70, 70);
   line-height: 20px;
   letter-spacing: 0.01em;
 }
 .top-products-specs .value {
   font-size: 36px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   letter-spacing: 0.01em;
 }
@@ -644,7 +656,7 @@ a.cart {
 }
 .category a{
   font-size: 18px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -715,15 +727,15 @@ a.cart {
   opacity: 0;
 }
 
-#delivery:checked ~ .features-slider > .slide-1,
-#guarantee:checked ~ .features-slider > .slide-2,
-#credit:checked ~ .features-slider > .slide-3 {
+input.delivery:checked ~ .features-slider > .slide-1,
+input.guarantee:checked ~ .features-slider > .slide-2,
+input.credit:checked ~ .features-slider > .slide-3 {
 	opacity: 1;
 	z-index: 1;
 }
 
 .features-btn {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: bold;
@@ -750,9 +762,9 @@ a.cart {
   z-index: -1;
 }
 
-#delivery:checked ~ .features-controls .delivery::before,
-#guarantee:checked ~ .features-controls .guarantee::before,
-#credit:checked ~ .features-controls .credit::before {
+input.delivery:checked ~ .features-controls .delivery::before,
+input.guarantee:checked ~ .features-controls .guarantee::before,
+input.credit:checked ~ .features-controls .credit::before {
   content:"";
   position: absolute;
   display: block;
@@ -763,15 +775,26 @@ a.cart {
   background: black;
 }
 
-#delivery:checked ~ .features-controls .delivery,
-#guarantee:checked ~ .features-controls .guarantee,
-#credit:checked ~ .features-controls .credit {
+input.delivery:checked ~ .features-controls .delivery,
+input.guarantee:checked ~ .features-controls .guarantee,
+input.credit:checked ~ .features-controls .credit {
   color: rgb(247, 225, 132);
 }
 
+.features-controls label:hover {
+  background: rgb(240, 197, 46);
+  cursor: pointer;
+}
+input.delivery:checked ~ .features-controls .delivery:hover,
+input.guarantee:checked ~ .features-controls .guarantee:hover,
+input.credit:checked ~ .features-controls .credit:hover {
+  background: rgb(0, 0, 0);
+}
+
+
 .features-slides h3 {
   font-size: 47px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -782,7 +805,7 @@ a.cart {
 }
 .features-description {
   font-size: 15px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgb(70, 70, 70);
   line-height: 30px;
   letter-spacing: 0.01em;
@@ -863,7 +886,7 @@ a.cart {
 
 .about-us h2 {
   font-size: 47px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -881,7 +904,7 @@ a.cart {
 }
 .about-us-description {
   font-size: 15px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgb(70, 70, 70);
   line-height: 30px;
   margin-bottom: 30px;
@@ -896,7 +919,7 @@ a.cart {
 
 ul.delivery-companies {
   font-size: 15px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -921,7 +944,7 @@ ul.delivery-companies li::before {
 
 .contacts h2 {
   font-size: 47px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -940,7 +963,7 @@ ul.delivery-companies li::before {
 }
 .contacts-description{
   font-size: 15px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgb(70, 70, 70);
   line-height: 30px;
   margin-bottom: 39px;
@@ -978,9 +1001,18 @@ ul.delivery-companies li::before {
 .modal {
   width: 960px;
   height: 553px;
-  position: relative;
+  position: fixed;
+  top: 50px;
+  left: 200px;
+  background: #ffffff;
+  z-index: 100;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
   display: none;
 }
+.modal-show {
+  display: block;
+}
+
 .modal-wrapper {
   width: 760px;
   margin: 0 auto;
@@ -989,13 +1021,13 @@ ul.delivery-companies li::before {
 }
 .modal label {
   font-size: 18px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 18px;
   display: inline-block;
 }
-#name, #email {
+input.name, input.email {
   width: 360px;
   height: 50px;
 }
@@ -1009,7 +1041,7 @@ label[for="email"] {
 label[for="name"] {
   margin-right: 35px;
 }
-#name {
+input.name {
   margin-right: 35px;
 }
 label[for="text"]{
@@ -1027,7 +1059,7 @@ label[for="text"]{
   resize: none;
   background: rgb(242, 242, 242);
   font-size: 14px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgba(70, 70, 70, 0.4);
   line-height: 18px;
   padding: 18px;
@@ -1037,7 +1069,7 @@ label[for="text"]{
   background: rgb(242, 242, 242);
   border: none;
   font-size: 14px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgba(70, 70, 70, 0.4);
   line-height: 18px;
   text-indent: 20px;
@@ -1078,6 +1110,7 @@ label[for="text"]{
   position: absolute;
   right: 29px;
   top: 20px;
+  cursor: pointer;
 }
 .modal-close:hover {
   opacity: 1;
@@ -1086,10 +1119,12 @@ label[for="text"]{
   opacity: 0.302;
 }
 
+
+
 .main-footer {
   background: rgb(70, 70, 70);
   font-size: 15px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgb(255, 255, 255);
   height: 323px;
   width: 100%;
@@ -1238,7 +1273,7 @@ label[for="text"]{
 
 .user-navigation-footer a {
   font-size: 15px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgb(255, 255, 255);
   line-height: 36px;
   letter-spacing: 0.01em;
@@ -1254,7 +1289,7 @@ label[for="text"]{
 
 .site-navigation-footer a {
   font-size: 18px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
@@ -1289,10 +1324,11 @@ label[for="text"]{
   min-height: 140px;
   margin: 0 auto;
   margin-top: 46px;
+  margin-bottom: 40px;
   background: #ffffff;
 }
 .breadcrumbs h2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 47px;
@@ -1313,7 +1349,7 @@ label[for="text"]{
 }
 .breadcrumbs-navigation a {
   font-size: 14px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.302);
   letter-spacing: 0.01em;
 }
@@ -1329,9 +1365,8 @@ label[for="text"]{
   display: flex;
 }
 .catalog .column-1 {
-  flex-basis: 328px;
-  flex-grow: 1;
-  height: 1283px;
+  background: rgb(239, 239, 239);
+  flex: 1 0 328px;
 }
 .catalog .column-2 {
   flex-basis: 832px;
@@ -1341,7 +1376,7 @@ label[for="text"]{
   background: rgb(239, 239, 239);
 }
 .filter h3 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
@@ -1351,6 +1386,7 @@ label[for="text"]{
   height: 70px;
   line-height: 70px;
   background: rgb(219, 219, 219);
+  margin-top: 0;
 }
 
 .input-range {
@@ -1375,7 +1411,7 @@ label[for="text"]{
   content: "от 0";
   position: absolute;
   font-size: 14px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.2);
   top: 25px;
   left: 0;
@@ -1384,7 +1420,7 @@ label[for="text"]{
   content: "до 5000";
   position: absolute;
   font-size: 14px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.2);
   top: 25px;
   left: 90px;
@@ -1421,7 +1457,7 @@ input[type="radio"] + label {
 
 .filter-itself {
   font-size: 14px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgb(0, 0, 0);
   line-height: 40px;
   letter-spacing: 0.01em;
@@ -1433,7 +1469,7 @@ input[type="radio"] + label {
 }
 .filter-itself legend {
   font-size: 18px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -1443,7 +1479,7 @@ input[type="radio"] + label {
   position: relative;
   top: -9px;
   font-size: 14px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgb(0, 0, 0);
   line-height: 40px;
 }
@@ -1571,7 +1607,7 @@ input[type="radio"]:disabled:active + label::before {
 .sorting {
   background: rgb(235, 235, 235);
   display: flex;
-  margin-top: 16px;
+
 }
 .sorting-types {
   padding: 0;
@@ -1601,7 +1637,7 @@ input[type="radio"]:disabled:active + label::before {
   margin-left: 15px;
 }
 .sorting h3 {
-    font-family: "Gilroy";
+    font-family: "Gilroy", Arial, sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-transform: uppercase;
@@ -1615,11 +1651,12 @@ input[type="radio"]:disabled:active + label::before {
     flex-basis: 272px;
     position: relative;
     left: 74px;
+    margin-top: 0;
   }
 
 .sorting a {
   font-size: 14px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.302);
 }
 .sorting a:hover {
@@ -1670,14 +1707,14 @@ input[type="radio"]:disabled:active + label::before {
 
 .item-name {
   font-size: 18px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   letter-spacing: 0.01em;
 }
 .item-price {
   font-size: 16px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(70, 70, 70);
   letter-spacing: 0.01em;
 }
@@ -1699,7 +1736,7 @@ input[type="radio"]:disabled:active + label::before {
 }
 .item-compare {
   font-size: 13px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.502);
   line-height: 36px;
   letter-spacing: 0.01em;
@@ -1711,10 +1748,10 @@ input[type="radio"]:disabled:active + label::before {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.item a:hover {
+.item:hover img{
   opacity: 0.702;
 }
-.item a:hover + .item-actions {
+.item:hover .item-actions {
   opacity: 1;
 }
 .item-actions:hover {
@@ -1729,6 +1766,7 @@ input[type="radio"]:disabled:active + label::before {
   background: url("../img/new.png") no-repeat;
   top: 28px;
   right: 27px;
+  z-index: 2;
 }
 
 
@@ -1753,7 +1791,7 @@ input[type="radio"]:disabled:active + label::before {
 }
 .back,
 .forward {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
@@ -1771,7 +1809,7 @@ input[type="radio"]:disabled:active + label::before {
 }
 
 .items-navigation .pages {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.302);
   font-weight: bold;
   text-transform: uppercase;

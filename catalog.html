@@ -14,7 +14,7 @@
       <nav class="user-navigation-header">
         <form class="search" method="get">
           <label for="search">
-              <input id="search" type="search" placeholder="Поиск по сайту">
+              <input class="search-field" id="search" type="search" placeholder="Поиск по сайту">
             </label>
         </form>
         <div class="user-navigation-itself">
@@ -73,7 +73,7 @@
         <div class="column-1">
           <section class="filter">
             <h3>Фильтр:</h3>
-            <form class="filter-itself" method="get">
+            <form class="filter-itself" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter-price">
                 <legend>Стоимость</legend>
                 <div class="input-range">
@@ -87,35 +87,35 @@
                 <legend>Цвет</legend>
                 <ul>
                   <li>
-                    <input id="black" type="checkbox" name="black"
+                    <input id="black" type="checkbox" name="colour"
                       class="filter-colour visually-hidden" value="black" >
                     <label for="black">
                       Черный
                     </label>
                   </li>
                   <li>
-                    <input id="white" type="checkbox" name="white"
+                    <input id="white" type="checkbox" name="colour"
                       class="filter-colour visually-hidden" value="white">
                     <label for="white">
                       Белый
                     </label>
                   </li>
                   <li>
-                    <input id="blue" type="checkbox" name="blue"
+                    <input id="blue" type="checkbox" name="colour"
                       class="filter-colour visually-hidden" value="blue">
                     <label for="blue">
                         Синий
                     </label>
                   </li>
                   <li>
-                    <input id="red" type="checkbox" name="red"
+                    <input id="red" type="checkbox" name="colour"
                       class="filter-colour visually-hidden" value="red">
                     <label for="red">
                       Красный
                     </label>
                   </li>
                   <li>
-                    <input id="pink" type="checkbox" name="pink"
+                    <input id="pink" type="checkbox" name="colour"
                       class="filter-colour visually-hidden" value="pink">
                     <label for="pink">
                       Розовый
@@ -127,7 +127,7 @@
                 <legend>Bluetooth</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="visually-hidden" id="yes" type="radio" name="bluetooth" value="yes">
+                    <input class="visually-hidden" id="yes" type="radio" name="bluetooth" value="yes" checked>
                     <label for="yes">
                       Есть
                     </label>
@@ -155,17 +155,19 @@
             <ul class="sorting-direction">
             <li>
               <a href="#">
-                <img src="img/icon-up-dir.svg" alt="По возрастанию">
+                <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
               </a>
             </li>
             <li>
               <a href="#">
-                <img class="sorting-current" src="img/icon-down-dir.svg" alt="По убыванию">
+                <img class="sorting-current" src="img/icon-down-dir.svg"
+                width="11" height="10" alt="По убыванию">
               </a>
             </li>
           </ul>
           </section>
           <section class="items-list">
+            <h2 class="visually-hidden">Список товаров</h2>
             <div class="items-list-wrapper">
               <div class="item">
                 <a href="#">
@@ -240,11 +242,12 @@
             </div>
           </section>
           <section class="items-navigation">
-              <a class="back" href="">Назад</a>
-              <a class="pages current-page" href="#">1</a>
-              <a class="pages" href="#">2</a>
-              <a class="pages" href="#">3</a>
-              <a class="forward" href="#">Вперед</a>
+            <h2 class="visually-hidden">Навигация</h2>
+            <a class="back" href="">Назад</a>
+            <a class="pages current-page" href="#">1</a>
+            <a class="pages" href="#">2</a>
+            <a class="pages" href="#">3</a>
+            <a class="forward" href="#">Вперед</a>
           </section>
         </div>
       </div>

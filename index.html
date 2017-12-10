@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -14,7 +14,7 @@
       <nav class="user-navigation-header">
         <form class="search" method="get">
           <label for="search"></label>
-          <input id="search" type="search" placeholder="Поиск по сайту">
+          <input class="search-field" id="search" type="search" placeholder="Поиск по сайту">
           <button class="search-submit" type="submit">
               Найти
           </button>
@@ -35,7 +35,7 @@
             <div class="catalog-submenu-header">
               <ul class="column column-1">
                 <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
                 <li><a href="#">Экшн-камеры</a></li>
               </ul>
               <ul class="column column-2">
@@ -57,9 +57,10 @@
     </header>
     <main>
       <section class="top-products">
-        <input type="radio" name="point" id="slide-1" checked>
-        <input type="radio" name="point" id="slide-2">
-        <input type="radio" name="point" id="slide-3">
+        <h2 class="visually-hidden">Лучшие предложения</h2>
+        <input class="slide-1" type="radio" name="point" id="slide-1" checked>
+        <input class="slide-2" type="radio" name="point" id="slide-2">
+        <input class="slide-3" type="radio" name="point" id="slide-3">
         <div class="slider">
           <div class="slides slide-1">
             <div class="column-1">
@@ -153,6 +154,7 @@
       	</div>
       </section>
       <section class="product-categories">
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="product-categories-list">
           <li class="category">
             <a href="#">
@@ -167,7 +169,7 @@
             </a>
           </li>
           <li class="category">
-            <a href="#">
+            <a href="catalog.html">
               <div class="category-title">
                 <img src="img/popular-2.png" width="160" height="160" alt="Моноподы для селфи">
               </div>
@@ -209,10 +211,11 @@
         </ul>
       </section>
       <section class="features">
+        <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="features-wrapper">
-          <input type="radio" class="btn features-btn" name="features" id="delivery" checked>
-          <input type="radio" class="btn features-btn" name="features" id="guarantee">
-          <input type="radio" class="btn features-btn" name="features" id="credit">
+          <input type="radio" class="btn features-btn delivery" name="features" id="delivery" checked>
+          <input type="radio" class="btn features-btn guarantee" name="features" id="guarantee">
+          <input type="radio" class="btn features-btn credit" name="features" id="credit">
           <div class="features-controls">
             <label class="features-btn delivery" for="delivery">Доставка</label>
             <label class="features-btn guarantee" for="guarantee">Гарантия</label>
@@ -249,6 +252,7 @@
         </div>
       </section>
       <section class="companies">
+        <h2 class="visually-hidden">Компании-партнеры</h2>
         <ul class="companies-logos">
           <li>
             <img src="img/logo-1.png" width="260" height="100" alt="Компания DJI">
@@ -302,6 +306,7 @@
           </section>
       </div>
       <section class="modal">
+        <h2 class="visually-hidden">Напишите нам</h2>
         <div class="modal-wrapper">
           <form class="write-us" method="post">
             <label for="name">
@@ -310,9 +315,9 @@
             <label for="email">
               Ваш e-mail:
             </label>
-            <input id="name" type="text" name="name"
+            <input class="name" id="name" type="text" name="name"
                 placeholder="Представьтесь, пожалуйста">
-            <input id="email" type="email" name="email" placeholder="Для отправки ответа">
+            <input class="email" id="email" type="email" name="email" placeholder="Для отправки ответа">
             <label for="text">Текст письма:</label>
             <textarea rows="5" id="text" placeholder="В свободной форме"></textarea>
           </form>
@@ -326,7 +331,7 @@
           </button>
         </div>
       </section>
-      </div>
+
     </main>
     <footer class="main-footer">
       <div class="main-footer-wrapper">
@@ -382,5 +387,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.min.js"></script>
   </body>
 </html>
