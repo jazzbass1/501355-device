@@ -1003,7 +1003,8 @@ ul.delivery-companies li::before {
   height: 553px;
   position: fixed;
   top: 50px;
-  left: 200px;
+  left: 50%;
+  margin-left: -480px;
   background: #ffffff;
   z-index: 100;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
@@ -1086,6 +1087,7 @@ label[for="text"]{
   outline: 3px solid rgb(247, 226, 150);
   outline-offset: -3px;
   position: relative;
+  color: rgb(70, 70, 70);
 }
 
 .modal input:invalid {
@@ -1096,6 +1098,10 @@ label[for="text"]{
   background: none;
   border: none;
   width: 200px;
+  cursor: pointer;
+}
+.modal-submit:focus {
+  outline: none;
 }
 .modal-submit::before {
   width: 200px;
@@ -1117,6 +1123,7 @@ label[for="text"]{
 }
 .modal-close:active {
   opacity: 0.302;
+  outline: none;
 }
 
 
