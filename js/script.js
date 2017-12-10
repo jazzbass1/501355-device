@@ -12,9 +12,6 @@
     popup.classList.remove("modal-show");
     name.focus();
   });
-  form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-  });
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       if (popup.classList.contains("modal-show")) {
